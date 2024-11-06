@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repository
-                git branch:'main',url: 'https://github.com/your-repo.git'
+                git branch:'main',url: 'https://github.com/Datameow07/meow.git'
             }
         }
  
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Print a message or run actual build commands here
                 sh 'echo "Building application..."'
-                // Replace the line above with actual build commands, like `mvn clean install` for Maven
+                // Replace the line above with actual build commands, like mvn clean install for Maven
             }
         }
  
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // Print a message or run testing commands here
                 sh 'echo "Running tests..."'
-                // Replace this with commands for running unit tests, e.g., `mvn test`
+                // Replace this with commands for running unit tests, e.g., mvn test
             }
         }
  
@@ -33,7 +33,7 @@ pipeline {
             steps {
                 // Deploy the application
                 sh 'echo "Deploying to ${DEPLOY_ENV} environment..."'
-                // Include commands to deploy, like `scp` for file transfer or remote deployment scripts
+                // Include commands to deploy, like scp for file transfer or remote deployment scripts
             }
         }
     }
